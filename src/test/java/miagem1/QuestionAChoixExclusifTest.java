@@ -66,14 +66,14 @@ public class QuestionAChoixExclusifTest {
         int indiceEtudiant = 2;
         // and : on demande le calcule du score 
         Float resScore =uneQuestion.getScoreForIndice(indiceEtudiant); 
-        // then : le score obtenu est 100
+        // then : le score obtenu est 100 pour une bonne réponse
         assertEquals(new Float(100f), resScore);
         // when : un étudiant fourni l'indice correspondant à une mauvaise réponse
         indiceEtudiant = 3;
         // and : on demande le calcule du score 
         resScore = uneQuestion.getScoreForIndice(indiceEtudiant); 
-        // then : le score obtenu est 100
-        assertEquals(new Float(100f), resScore);
+        // then : le score obtenu est 0 pour une mauvaise réponse
+        assertEquals(new Float(0f), resScore);
     }
     
 }
