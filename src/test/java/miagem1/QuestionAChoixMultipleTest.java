@@ -14,7 +14,7 @@ public class QuestionAChoixMultipleTest {
 
     @Before
     public void setUp() throws Exception {
-        List<Integer> list= new ArrayList<Integer>(Arrays.asList(2,3,5));
+        List<Integer> list= new ArrayList<Integer>(Arrays.asList(1,2,3));
         // given :: un objet de Type QuestionAChoixMultiple
         uneQuestion = new QuestionAChoixMultiple("un énoncé à réponse multiple", list);
     }
